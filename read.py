@@ -14,3 +14,9 @@ for message in data:
 print("流言的平均长度是: ", sun_len/len(data))
 
 
+new = []
+for new_m in data:
+	if len(new_m) < 100:
+		new.append(new_m)
+print("一共有", len(new), "个留言长度少于100.")
+print(new[1])
