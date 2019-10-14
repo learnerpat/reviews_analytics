@@ -19,4 +19,10 @@ for new_m in data:
 	if len(new_m) < 100:
 		new.append(new_m)
 print("一共有", len(new), "个留言长度少于100.")
-print(new[1])
+print(new[1]) 
+
+good = []
+for good_m in data:
+	if "good" in good_m:
+		good.append(good_m)
+print("一共有", len(good), "个留言提到good.")
